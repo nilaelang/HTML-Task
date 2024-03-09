@@ -9,30 +9,32 @@
         /* CSS styles for the body */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
+            margin-left: 5%;
+            margin-right: 5%;
             padding: 0;
+            background-color: #daeaf4
         }
 
         /* CSS styles for the image */
         img {
             max-width: 200px;
             height: auto;
-            float: left; /* Make the image float to the left */
-            margin-right: 20px; /* Add right margin for spacing */
+            float: left; 
+            margin-right: 20px; 
         }
 
         /* CSS styles for the navigation bar */
         nav {
             background-color: #f7f9fb;
             overflow: hidden;
-            padding: 10px; /* Add padding to the navigation bar */
+            padding: 0px; 
         }
 
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            float: right; /* Float the list to the right */
+            float: right; 
         }
 
         nav ul li {
@@ -51,19 +53,103 @@
             background-color: #ddd;
             color: black;
         }
-      
+
+        /* CSS styles for the heading */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .container-text {
+            border: 4px solid #ccc; 
+            padding: 20px; 
+            margin: 20px; 
+            background-color: #f2f2f2;
+            width: 90%;
+            text-align: left;
+        }
+
+        .container {
+            border: 4px solid #ccc; 
+            padding: 20px; 
+            margin: 20px; 
+            background-color: #f2f2f2;
+            width: 90%;
+            text-align: left;
+            overflow: hidden; /* Clear floats */
+            display: flex; /* Use flexbox */
+        }
+
+        .content {
+            flex: 3; /* Take remaining space */
+        }
+
+        .image-column {
+            display: flex; /* Use flexbox */
+            flex-direction: row; /* Stack images vertically */
+            justify-content: flex-start; /* Align items to the start */
+            margin-left: 20px; /* Add spacing between content and images */
+        }
+
+        .image-column img {
+            width: auto; /* Adjust image width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Add spacing between images */
+        }
+
+        /* CSS styles for the divider */
+        .divider {
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
         /* CSS styles for the footer */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 20px 0;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
+            margin-top: 20px;
+            font: 11px Arial, sans-serif;
         }
     </style>
+
+    <style>
+                .price-list-box {
+              border: 4px solid #ccc;
+              padding: 20px;
+              background-color: #f2f2f2;
+              width: 30%;
+              margin: 20px auto;
+          }
+
+          .price-list {
+              border: 1px solid #ccc;
+              padding: 10px;
+              background-color: #fff;
+          }
+
+          .price-list h2 {
+              margin-top: 0;
+          }
+
+          .price-list table {
+              width: 100%;
+              border-collapse: collapse;
+          }
+
+          .price-list th, .price-list td {
+              border: 1px solid #ccc;
+              padding: 8px;
+              text-align: left;
+          }
+
+          .price-list th {
+              background-color: #f7f7f7;
+          }
+    </style>
 </head>
+
 <body>
 
     <!-- Navigation bar -->
@@ -77,8 +163,9 @@
         </ul>
     </nav>
     <div class="divider"></div>
+
     <!-- Heading -->
-    <div>
+    <div class="container-text">
         <h1>Laundry Mate</h1>
         <p>Laundry service for your home or office</p>
         <h2>We are here to help you with your laundry and drying needs.</h2>
@@ -90,11 +177,69 @@
       </p>
     </div>
 
+    <div class="container">
+      <div class="content">
+          <h2>Our Services</h2>
+          <ul>
+              <li>Laundry</li>
+              <li>Dry Cleaning</li>
+              <li>Ironing</li>
+              <li>Dry Cleaning</li>
+              <li>Stain Removal</li>
+              <li>Express Service</li>
+              <li>Special Garment Care</li>
+          </ul>
+      </div>
+      <div class="image-column">
+          <img src="dan-lefebvre-APUvZYCjPJ0-unsplash.jpg" alt="Image 1">
+          <img src="jeremy-sallee-lgrM1t4rxWQ-unsplash.jpg" alt="Image 2">
+          <img src="waldemar-NPPNHZK1U0s-unsplash.jpg" alt="Image 3">
+      </div>
+  </div>
+  
+  <div class="price-list-box">
+    <div class="price-list">
+        <h2>Price List</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Laundry</td>
+                <td>Rs. 100/Kg</td>
+            </tr>
+            <tr>
+                <td>Dry Cleaning</td>
+                <td>Rs. 750/Garment</td>
+            </tr>
+            <tr>
+                <td>Ironing</td>
+                <td>Rs. 100/Garment</td>
+            </tr>
+            <tr>
+                <td>Stain Removal</td>
+                <td>Rs. 300/Garment</td>
+            </tr>
+            <tr>
+                <td>Express Service</td>
+                <td>Rs. 200/Kg</td>
+            </tr>
+            <tr>
+                <td>Special Garment Care</td>
+                <td>Rs. 1500/Garment</td>
+            </tr>
+        </table>
+    </div>
+</div>
+    
     <!-- Footer -->
     <footer>
         <div>
             <p>LaundryMate Office Address:</p>
-            <p>39 Riverside Drive, New York, NY 10001, USA</p>
+            <p>39 Riverside Drive,Imphal East,Manipur</p>
+            <p>Phone: XXX-XXX-7890</p>
+            <p>Email: sales@laundrymart.com</p>
         </div>
 
         <p>&copy; 2024 LaundryMate. All rights reserved.</p>
