@@ -1,0 +1,199 @@
+<style>
+/* CSS styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+    background-color: #f7f7f7
+}
+
+/* CSS styles for the image */
+img {
+    max-width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+/* CSS styles for the navigation bar */
+nav {
+    background-color: #f7f9fb;
+    overflow: hidden;
+    padding: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* CSS styles for the heading */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container-text {
+    border: 4px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f2f2f2;
+    width: 90%;
+    text-align: left;
+}
+
+.container {
+    border: 4px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f2f2f2;
+    width: 90%;
+    text-align: left;
+    overflow: hidden;
+    /* Clear floats */
+    display: flex;
+    /* Use flexbox */
+}
+
+.content {
+    flex: 3;
+    /* Take remaining space */
+}
+
+.image-column {
+    display: flex;
+    /* Use flexbox */
+    flex-direction: row;
+    /* Stack images vertically */
+    justify-content: flex-start;
+    /* Align items to the start */
+    margin-left: 20px;
+    /* Add spacing between content and images */
+}
+
+.image-column img {
+    width: auto;
+    /* Adjust image width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 10px;
+    /* Add spacing between images */
+}
+
+/* CSS styles for the divider */
+.divider {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*CSS styles for the booking form*/
+.booking-form-box {
+    border: 4px solid #ccc;
+    padding: 20px;
+    background-color: #f2f2f2;
+    width: 70%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.booking-form-box h1 {
+    margin-top: 0;
+}
+
+.booking-form-box form {
+    margin-top: 20px;
+}
+
+.booking-form-box .form-group {
+    margin-bottom: 20px;
+}
+
+.booking-form-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.booking-form-box input {
+    width: 75%;
+    /* Adjust for border and padding */
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.booking-form-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.booking-form-box button:hover {
+    background-color: #0056b3;
+}
+
+/* CSS styles for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font: 11px Arial, sans-serif;
+}
+
+.price-list-box {
+    border: 4px solid #ccc;
+    padding: 20px;
+    background-color: #f2f2f2;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.price-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.price-list h2 {
+    margin-top: 0;
+}
+
+.price-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-list th,
+.price-list td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.price-list th {
+    background-color: #f7f7f7;
+}
+</style>
