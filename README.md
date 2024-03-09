@@ -2,7 +2,7 @@
 
 This is the code for the Laundry Mate website, a laundry service website designed for home or office laundry needs.
 
-The webpage is hosted on GitHub Pages.
+The webpage is hosted on [GitHub Pages.](https://nilaelang.github.io/HTML-Task/)
 
 ## Description
 
